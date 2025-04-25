@@ -62,11 +62,9 @@
       <section class="section-button">
         <div class="container">
           <h1 class="headline-main">Effective Solutions for Your Business</h1>
-          <button type="button" class="main-button">Order Service</button>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
-            libero.
-          </p>
+          <button type="button" class="main-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -436,6 +434,88 @@
       </section>
     </main>
 
+    <!-- modal -->
+    <div class="modal" data-modal>
+      <div class="overlay-modal">
+        <button type="button" class="button-close-modal" data-modal-close>
+          <svg class="icon-close-modal" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="text-modal">Leave your contacts and we will call you back</p>
+        <form name="regisrattion" autocomplete="on" novalidate>
+          <ul>
+            <li class="list-form-modal">
+              <label for="name-input" class="label-name">Name</label>
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  class="text-input"
+                  id="name-input"
+                />
+                <svg class="icon-name-modal" width="12" height="12">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="list-form-modal">
+              <label for="name-input" class="label-name">Phone</label>
+              <div>
+                <input
+                  type="tel"
+                  name="tel"
+                  class="text-input"
+                  id="name-input"
+                />
+                <svg class="icon-name-modal" width="12" height="12">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="list-form-modal">
+              <label for="name-input" class="label-name">Email</label>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  class="text-input"
+                  id="name-input"
+                />
+                <svg class="icon-name-modal" width="12" height="12">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+          <label for="comments" class="label-name label-area">Comment</label>
+          <textarea
+            class="textarea-modal"
+            name="usercomment"
+            rows=""
+            cols=""
+            placeholder="Text input"
+            id="comments"
+          ></textarea>
+
+          <label class="label-checked">
+            <input
+              type="checkbox"
+              value="accept"
+              class="checked-form visually-hidden"
+            />
+            <span class="checked-box"></span>
+
+            <span>
+              I accept the terms and conditions of the
+              <a href="index.html" class="link-checked">Privacy Policy</a>
+            </span>
+          </label>
+          <button type="submit" class="send-button">Send</button>
+        </form>
+      </div>
+    </div>
+
     <!-- footer -->
     <footer class="section-footer">
       <div class="container flex-cont">
@@ -481,7 +561,27 @@
             </li>
           </ul>
         </div>
+        <div class="container-input-footer">
+          <label for="footer-input" class="label-footer">Subscribe</label>
+          <div class="form-container-footer">
+            <input
+              type="email"
+              name="footer"
+              autocomplete="on"
+              id="footer-input"
+              class="email-input-foot"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button-footer">
+              Subscribe
+              <svg width="24px" height="20px" class="icon-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="./JS/modal.js"></script>
   </body>
 </html>

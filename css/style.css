@@ -631,6 +631,7 @@ label {
 .button-close-modal:hover,
 .button-close-modal:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .icon-close-modal {
@@ -722,10 +723,6 @@ label {
 
 .textarea-modal:focus-within {
   border-color: #4d5ae5;
-}
-
-.label-area {
-  margin-top: 8px;
 }
 
 textarea::placeholder {

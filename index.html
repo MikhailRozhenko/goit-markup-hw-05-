@@ -559,25 +559,28 @@
             </li>
           </ul>
         </div>
-        <form class="form-input-footer">
+        <div class="form-container-footer">
           <p class="subscribe-footer">Subscribe</p>
-          <div class="form-container-footer">
-            <input
-              type="email"
-              name="footer"
-              autocomplete="on"
-              id="footer-input"
-              class="email-input-foot"
-              placeholder="E-mail"
-            />
+          <form class="form-input-footer">
+            <label class="label-footer">
+              <input
+                type="email"
+                name="footer-input-name"
+                autocomplete="on"
+                id="footer-input"
+                class="email-input-foot"
+                placeholder="E-mail"
+              />
+            </label>
+
             <button type="submit" class="button-footer">
               Subscribe
-              <svg width="24px" height="20px" class="icon-send">
+              <svg width="24" height="24" class="icon-send">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./JS/modal.js"></script>

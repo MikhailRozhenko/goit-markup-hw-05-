@@ -524,11 +524,16 @@ label {
   background-color: transparent;
   padding-left: 16px;
   color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
 .form-input-footer {
   display: flex;
-  flex-direction: column;
+
+  gap: 24px;
 }
 
 .email-input-foot::placeholder {
@@ -537,36 +542,39 @@ label {
 
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
 .button-footer {
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   font-weight: 500;
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
 
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #fff;
-  background: #4d5ae5;
+  color: #ffffff;
+  background-color: #4d5ae5;
   border: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
 .icon-send {
   fill: #fff;
+  margin-left: 16px;
 }
 
 .form-container-footer {
   display: flex;
-  gap: 24px;
+
+  flex-direction: column;
 }
 
 /* modal */
@@ -743,7 +751,7 @@ textarea::placeholder {
 
 .checked-form:checked + .checked-box {
   background-color: #404bbf;
-  background-image: url(/images/icon-check.png);
+  background-image: url(../images/icon-check.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 10px 8px;

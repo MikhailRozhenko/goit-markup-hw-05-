@@ -505,13 +505,13 @@ label {
   align-items: baseline;
 }
 
-.label-footer {
+.subscribe-footer {
   font-weight: 500;
   font-size: 16px;
 
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 16px;
 }
 
@@ -526,7 +526,7 @@ label {
   color: #fff;
 }
 
-.container-input-footer {
+.form-input-footer {
   display: flex;
   flex-direction: column;
 }
